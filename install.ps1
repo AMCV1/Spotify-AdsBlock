@@ -14,7 +14,11 @@ function Write-Success {
     Write-Host -Object ' > OK' -ForegroundColor 'Green'
   }
 }
-
+    Write-Host @'
+**********************************
+Authors: @KuraiTenshi, @AMCV
+**********************************
+'@
 function Write-Unsuccess {
   [CmdletBinding()]
   param ()
@@ -146,11 +150,6 @@ function Install-Spicetify {
     Write-Host -Object 'Spicetify se instalo correctamente!' -ForegroundColor 'Green'
   }
 }
-    Write-Host @'
-**********************************
-Authors: @KuraiTenshi, @AMCV
-**********************************
-'@
 #endregion Functions
 
 #region Main
@@ -217,5 +216,6 @@ else {
 }
 #endregion Marketplace
 #endregion Main
+
 
 
