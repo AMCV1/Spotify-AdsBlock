@@ -134,14 +134,6 @@ function Install-Spicetify {
   begin {
     Write-Host -Object 'Instalando spicetify...'
   }
-
-    Write-Host @'
-**********************************
-Authors: @KuraiTenshi, @AMCV
-**********************************
-'@
-
-
   process {
     $archivePath = Get-Spicetify
     Write-Host -Object 'Extrayendo spicetify...' -NoNewline
@@ -154,6 +146,11 @@ Authors: @KuraiTenshi, @AMCV
     Write-Host -Object 'Spicetify se instalo correctamente!' -ForegroundColor 'Green'
   }
 }
+    Write-Host @'
+**********************************
+Authors: @KuraiTenshi, @AMCV
+**********************************
+'@
 #endregion Functions
 
 #region Main
