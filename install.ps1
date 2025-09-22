@@ -1,7 +1,7 @@
 param (
   [Parameter()]
   [switch]
-  $UninstallSpotifyStoreEdition = (Read-Host -Prompt 'Desinstalar Spotify edicion Windows Store si existe (Y/N)') -eq 'y',
+  $UninstallSpotifyStoreEdition = (Read-Host -Prompt 'Desinstalar Ediciones de Spotify de la Windows Store si existe (Y/N)') -eq 'y',
   [Parameter()]
   [switch]
   $UpdateSpotify
@@ -293,4 +293,5 @@ Write-Host 'Parcheo completo, iniciando Spotify...'
 
 Start-Process -WorkingDirectory $spotifyDirectory -FilePath $spotifyExecutable
 Write-Host 'Done.'
+
 
