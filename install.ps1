@@ -202,7 +202,7 @@ $choices = [System.Management.Automation.Host.ChoiceDescription[]] @(
     (New-Object System.Management.Automation.Host.ChoiceDescription "&Yes", "Instalar Spicetify Marketplace."),
     (New-Object System.Management.Automation.Host.ChoiceDescription "&No", "No instalar Spicetify Marketplace.")
 )
-$choice = $Host.UI.PromptForChoice('', "Tambien quieres instalar Spicetify Marketplace? Estara disponible en el cliente de Spotify donde podras instalar facilmente temas y extensiones.", $choices, 0)
+$choice = $Host.UI.PromptForChoice('', "`nTambien quieres instalar Spicetify Marketplace? Estara disponible en el cliente de Spotify donde puedes instalar facilmente temas y extensiones.", $choices, 0)
 if ($choice -eq 1) {
   Write-Host -Object 'Instalacion de Spicetify Marketplace cancelada' -ForegroundColor 'Yellow'
 }
@@ -216,6 +216,7 @@ else {
 }
 #endregion Marketplace
 #endregion Main
+
 
 
 
