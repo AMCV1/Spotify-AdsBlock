@@ -92,15 +92,6 @@ function Get-Spicetify {
     $archivePath = [System.IO.Path]::Combine([System.IO.Path]::GetTempPath(), "spicetify.zip")
   }
 
-
-  Write-Host @'
-**********************************
-Authors: @KuraiTenshi, @AMCV
-**********************************
-'@
-
-
-
   process {
     Write-Host -Object "Descargando spicetify v$targetVersion..." -NoNewline
     $Parameters = @{
@@ -143,6 +134,14 @@ function Install-Spicetify {
   begin {
     Write-Host -Object 'Instalando spicetify...'
   }
+
+    Write-Host @'
+**********************************
+Authors: @KuraiTenshi, @AMCV
+**********************************
+'@
+
+
   process {
     $archivePath = Get-Spicetify
     Write-Host -Object 'Extrayendo spicetify...' -NoNewline
@@ -221,4 +220,5 @@ else {
 }
 #endregion Marketplace
 #endregion Main
+
 
